@@ -1,12 +1,117 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-UK">
 <head>
-<title>Page Title</title>
+<style>
+body {background-color:lightblue}
+p  {color: black;
+  font-family: courier; }
+h1 {color: BLack; 
+ font-family:courier}
+ ul {color: BLack; 
+ font-family:courier}
+a:link {
+color:darkblue;
+background-color: transparent;
+text-decoration: none
+}
+a:visited {
+color:black;
+background-color: transparent;
+text-decoration: underline
+}
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
 </head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+<h1 style="Color:black" title="Welcome to my webpage"> What is it all about, Alfie?</h1>
+<br>
+<p> <b> Welcome to my webpage, I hope you find it informative and fully functional!</p>
+<h3 style="font-family:courier">Quick links:</h3>
+<ul style="font-family:courier">
+  <li><a href="#C1">Photography</a></li>
+  <li><a href="#C2">Cycling</a></li>
+  <li><a href="#C3">Music</a></li>
+   <li><a href="#C4">Contact me</a></li>
+</ul>
+<hr>
+<h1> My work at Simplyhealth.</h1> 
+<p id="demo">I've worked in my current position for three years now, and have taken on every responsibility in my reach. I want to take this opportunity to learn something new. I attended the Salesforce convention in 2018 and found it to be both interesting and inspiring. I have been involved with the Voyager program, from refinement sessions through to User Acceptance Testing and supporting on release night.</p>
+<br>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Enough about work..</button>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h1 id="C1"> Photography! </h1>
+<p> I'm a keen amature photographer and very much enjoy taking pictures when away on trips, although I have a track record for leaving the battery at home on charge! Please see below some photos that I took in 2018:
+<br>
+<img src="Budapest.JPG" alt="Danume ruver through Budapest">
+<img src="Bush.JPG" alt="Statue through Bushes">
+<img src="Butterfly.JPG" alt="Butterfly on Buddleia">
+<img src="Budapest.JPG" alt="Golden interior of Budapest Church">
+<img src="Path.JPG" alt="Quiet path with trees">
+<img src="Pink Flowers.JPG" alt="Pink Flowers">
+<img src="Statue.JPG" alt="Shell statue by the sea">
+<img src="Window.JPG" alt="Stain glassed Window">
+<img src="Sun Flower.JPG" alt="Sun Flowers">
+<img src="White Flower.JPG" alt="White Flowers">
+<img src="Pool.JPG" alt="Sunset at Pool">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h1 id="C2"> Cycling! </h1>
+<br>
+<p> I enjoy cycling in my spare time with family and friends, and have ridden the BHF London to Brighton sponsored cycle twice. I haven't spent much time on the saddle in the past few months, but anticipate many more rides as the weather picks up, even if that is to the local pub! The London to Brighton cycle ride is 61 Miles in total and includes climbing the Ditchling Beacon. See below some stats regarding this famous hill climb:</p>
+<ul style="font-family:courier">
+<li>Distance: 0.9 miles / 1.45 km</li>
+<li>Height gain: 143m</li>
+<li>Average gradient: 9%</li>
+<li>Max gradient: 16% </li></ul>
+<br>
+<p> Please see below a link to the BHF website for further details:</P>
+<a href="https://www.bhf.org.uk/how-you-can-help/events/bike-rides/london-to-brighton-bike-ride-2019/">
+<img title="Follow this link" src="bike.jpeg" alt="British Heart Foundation" target="_blank" style="width:42px;height:42px;border:0"></a>
+<br>
+<br>
+<hr>
+<br>
+<h1 id="C3">My favourite artists.</h1>
+<br>
+<p> I very much enjoy listening to music when I can, and think that Spotify is excellent, although I find now that I don't know the name of artists that I listen to regularly!</p>
+<p>I have recently started listening to podcasts, and discovered 'Hip-hop saved my life' which is hosted by Romesh Ranganathan and combines both comedy and Hip-hop! See below some artists that I appreciate:</p>
+<p>-Floating Point</p>
+<p id="music">-Flight Facilities</p>
+<p>-Chemical Brothers</p>
+<p>-alt-J</p>
+<p>-Chance the Rapper</p>
+<script>
+function myFunction(music) {
+  document.getElementById("music").style.fontSize = "30px"; 
+  document.getElementById("music").style.color = "red";        
+}
+</script>
+<button type="button" onclick="myFunction(music)">Who's my favorite?</button>
+<br>
+<hr>
+<br>
+<h1 id="C4"> Contact me </h1>
+<p> If  you have any questions for me, or any feedback, please do let me know. You can reach me either using my work email address, peter.silvester@simplyhealth.co.uk, or my personal address, alfsilvester@gmail.com. Thank you for your time! </p>
+<br>
+<hr>
 </html>
